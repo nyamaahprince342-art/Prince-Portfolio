@@ -139,17 +139,23 @@ body{
 
   width:100%;
 
-  height:320px;
+  height:auto;
 
-  object-fit:cover;
+  max-height:500px;
+
+  object-fit:contain;
+
+  background:#000;
 
   transition:0.5s;
+
+  display:block;
 
 }
 
 .card:hover img{
 
-  transform:scale(1.06);
+  transform:scale(1.03);
 
 }
 
@@ -309,7 +315,7 @@ body{
 
   .card img{
 
-    height:250px;
+    max-height:350px;
 
   }
 
@@ -494,7 +500,7 @@ body{
 
     <div class="video-box">
 
-      <!-- REPLACE THE LINK BELOW WITH YOUR VIDEO LINK -->
+      <!-- REPLACE WITH YOUR VIDEO LINK -->
 
       <iframe
       src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
