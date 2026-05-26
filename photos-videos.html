@@ -197,7 +197,7 @@ body{
 
   width:100%;
 
-  max-width:850px;
+  max-width:900px;
 
   margin:auto;
 
@@ -205,7 +205,7 @@ body{
 
   border-radius:25px;
 
-  padding:40px 20px;
+  padding:35px 20px;
 
   border:1px solid rgba(0,217,255,0.15);
 
@@ -213,7 +213,7 @@ body{
 
 .youtube-icon{
 
-  font-size:90px;
+  font-size:80px;
 
   color:red;
 
@@ -227,11 +227,37 @@ body{
 
   font-size:28px;
 
-  margin-bottom:15px;
+  margin-bottom:25px;
 
   letter-spacing:3px;
 
 }
+
+.video-wrapper{
+
+  width:100%;
+
+  overflow:hidden;
+
+  border-radius:20px;
+
+  margin-bottom:25px;
+
+}
+
+.video-wrapper iframe{
+
+  width:100%;
+
+  height:500px;
+
+  border:none;
+
+  border-radius:20px;
+
+}
+
+/* YOUTUBE TEXT */
 
 .youtube-text{
 
@@ -245,7 +271,7 @@ body{
 
 }
 
-/* YOUTUBE BUTTON */
+/* BUTTON */
 
 .youtube-btn{
 
@@ -277,7 +303,7 @@ body{
 
 }
 
-/* BUTTON */
+/* HOME BUTTON */
 
 .btn-area{
 
@@ -345,7 +371,13 @@ body{
 
   .youtube-icon{
 
-    font-size:70px;
+    font-size:65px;
+
+  }
+
+  .video-wrapper iframe{
+
+    height:260px;
 
   }
 
@@ -510,7 +542,7 @@ body{
 
   </div>
 
-  <!-- YOUTUBE SECTION -->
+  <!-- YOUTUBE VIDEO SECTION -->
 
   <div class="youtube-section">
 
@@ -519,14 +551,26 @@ body{
       <i class="fab fa-youtube youtube-icon"></i>
 
       <h2 class="youtube-title">
-        MY YOUTUBE CHANNEL
+        FEATURED VIDEO
       </h2>
+
+      <!-- VIDEO -->
+
+      <div class="video-wrapper">
+
+        <iframe
+        src="https://www.youtube.com/embed/CPrxiiLOuDg"
+        title="YouTube Shorts Video"
+        allowfullscreen>
+        </iframe>
+
+      </div>
 
       <p class="youtube-text">
 
-        Click the button below to watch my educational
-        videos, classroom activities, internship experiences,
-        and teaching practice content on YouTube.
+        Watch my educational activities, classroom teaching,
+        internship experiences, and professional development
+        videos on my YouTube channel.
 
       </p>
 
@@ -534,7 +578,7 @@ body{
       target="_blank"
       class="youtube-btn">
 
-        Open YouTube Channel
+        Visit My YouTube Channel
 
       </a>
 
@@ -542,7 +586,7 @@ body{
 
   </div>
 
-  <!-- BUTTON -->
+  <!-- HOME BUTTON -->
 
   <div class="btn-area">
 
