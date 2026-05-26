@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Curriculum Vitae</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+
+  background:
+  linear-gradient(rgba(2,8,20,0.94), rgba(2,8,20,0.96)),
+  url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop');
+
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+
+  min-height:100vh;
+  padding:20px;
+  color:white;
+
+}
+
+/* MAIN CONTAINER */
+
+.cv-container{
+
+  max-width:1100px;
+  margin:auto;
+
+  background:rgba(8,17,31,0.94);
+
+  border-radius:25px;
+
+  overflow:hidden;
+
+  display:flex;
+
+  box-shadow:0 0 30px rgba(0,217,255,0.18);
+
+  border:1px solid rgba(0,217,255,0.2);
+
+}
+
+/* LEFT SIDE */
+
+.left-side{
+
+  width:280px;
+
+  background:#02111d;
+
+  padding:35px 25px;
+
+  border-right:1px solid rgba(0,217,255,0.2);
+
+}
+
+.cv-title{
+
+  color:#00d9ff;
+
+  font-size:28px;
+
+  font-weight:bold;
+
+  margin-bottom:35px;
+
+  text-align:center;
+
+  letter-spacing:3px;
+
+}
+
+/* MENU */
+
+.menu{
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:15px;
+
+}
+
+.menu a{
+
+  text-decoration:none;
+
+  color:white;
+
+  background:rgba(255,255,255,0.05);
+
+  padding:14px 18px;
+
+  border-radius:12px;
+
+  transition:0.3s;
+
+  border:1px solid rgba(0,217,255,0.1);
+
+  font-size:14px;
+
+}
+
+.menu a:hover{
+
+  background:#00d9ff;
+
+  color:#02111d;
+
+  transform:translateX(5px);
+
+}
+
+/* RIGHT SIDE */
+
+.right-side{
+
+  flex:1;
+
+  padding:35px;
+
+}
+
+/* SECTIONS */
+
+.section{
+
+  margin-bottom:35px;
+
+  background:rgba(255,255,255,0.03);
+
+  padding:25px;
+
+  border-radius:18px;
+
+  border:1px solid rgba(0,217,255,0.12);
+
+}
+
+.section h2{
+
+  color:#00d9ff;
+
+  margin-bottom:18px;
+
+  font-size:24px;
+
+}
+
+.section p,
+.section li{
+
+  color:#ddd;
+
+  line-height:2;
+
+  font-size:15px;
+
+}
+
+.section ul{
+
+  padding-left:20px;
+
+}
+
+/* BUTTON */
+
+.home-btn{
+
+  display:inline-block;
+
+  margin-top:10px;
+
+  background:#00d9ff;
+
+  color:#02111d;
+
+  padding:13px 28px;
+
+  border-radius:25px;
+
+  text-decoration:none;
+
+  font-size:14px;
+
+  font-weight:bold;
+
+  transition:0.3s;
+
+}
+
+.home-btn:hover{
+
+  background:white;
+
+  color:#00aaff;
+
+}
+
+/* MOBILE VIEW */
+
+@media(max-width:900px){
+
+  .cv-container{
+
+    flex-direction:column;
+
+  }
+
+  .left-side{
+
+    width:100%;
+
+    border-right:none;
+
+    border-bottom:1px solid rgba(0,217,255,0.2);
+
+  }
+
+  .cv-title{
+
+    margin-bottom:25px;
+
+  }
+
+}
+
+@media(max-width:768px){
+
+  .right-side{
+
+    padding:22px;
+
+  }
+
+  .section{
+
+    padding:20px;
+
+  }
+
+  .section h2{
+
+    font-size:21px;
+
+  }
+
+  .section p,
+  .section li{
+
+    font-size:14px;
+
+    line-height:1.9;
+
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="cv-container">
+
+  <!-- LEFT SIDE -->
+
+  <div class="left-side">
+
+    <h1 class="cv-title">CURRICULUM VITAE</h1>
+
+    <div class="menu">
+
+      <a href="#profile">
+        <i class="fas fa-user"></i>
+        Profile
+      </a>
+
+      <a href="#attributes">
+        <i class="fas fa-star"></i>
+        Personal Attributes
+      </a>
+
+      <a href="#education">
+        <i class="fas fa-graduation-cap"></i>
+        Education
+      </a>
+
+      <a href="#certifications">
+        <i class="fas fa-certificate"></i>
+        Certifications
+      </a>
+
+      <a href="#leadership">
+        <i class="fas fa-users"></i>
+        Leadership
+      </a>
+
+      <a href="#employment">
+        <i class="fas fa-briefcase"></i>
+        Employment
+      </a>
+
+      <a href="#capabilities">
+        <i class="fas fa-lightbulb"></i>
+        Capabilities
+      </a>
+
+      <a href="#languages">
+        <i class="fas fa-language"></i>
+        Languages
+      </a>
+
+      <a href="#hobbies">
+        <i class="fas fa-music"></i>
+        Hobbies
+      </a>
+
+    </div>
+
+  </div>
+
+  <!-- RIGHT SIDE -->
+
+  <div class="right-side">
+
+    <!-- PROFILE -->
+
+    <div class="section" id="profile">
+
+      <h2>Profile</h2>
+
+      <p>
+        My name is Prince Nyamaa. I am a very dedicated,
+        hardworking, and God-fearing person who can work under
+        pressure. I am very time-conscious, disciplined, and
+        committed to excellence in every responsibility entrusted
+        to me.
+      </p>
+
+    </div>
+
+    <!-- PERSONAL ATTRIBUTES -->
+
+    <div class="section" id="attributes">
+
+      <h2>Personal Attributes</h2>
+
+      <ul>
+
+        <li>God-fearing</li>
+
+        <li>Good listener</li>
+
+        <li>Tolerance</li>
+
+        <li>Visionary</li>
+
+      </ul>
+
+    </div>
+
+    <!-- EDUCATION -->
+
+    <div class="section" id="education">
+
+      <h2>Educational Background</h2>
+
+      <ul>
+
+        <li>2015-2018: Juaben Presby Junior High School</li>
+
+        <li>2018-2021: Effiduasse Senior High School (Effisco)</li>
+
+        <li>
+          2021-2025: Akenten-Appiah Menka University of Skills
+          Training and Entrepreneurial Development
+        </li>
+
+      </ul>
+
+    </div>
+
+    <!-- CERTIFICATIONS -->
+
+    <div class="section" id="certifications">
+
+      <h2>Certifications</h2>
+
+      <ul>
+
+        <li>West African Senior Secondary Certificate Examination (WASSCE)</li>
+
+        <li>Basic Education Certificate Examination (BECE)</li>
+
+        <li>Bachelor of Degree in Information Technology in Education</li>
+
+      </ul>
+
+    </div>
+
+    <!-- LEADERSHIP -->
+
+    <div class="section" id="leadership">
+
+      <h2>Leadership Experience</h2>
+
+      <ul>
+
+        <li>2012 – 2013: Class Prefect – Effiduase Demonstration Junior High School</li>
+
+        <li>2013/2014: Compound/Sanitation Prefect – Effiduase Demonstration Junior High School</li>
+
+        <li>2014 – 2016: Class Prefect – Dadease Agric. Senior High School</li>
+
+        <li>2018 – 2021: Church Youth President – Excellent Way Chapel International</li>
+
+        <li>2022 – 2023: Course Representative – AAMUSTED</li>
+
+        <li>2022: SoSSA Interim Media Committee Member – AAMUSTED</li>
+
+        <li>2024/2025: Secretary for Programs and Projects – Autonomy Hall</li>
+
+      </ul>
+
+    </div>
+
+    <!-- EMPLOYMENT -->
+
+    <div class="section" id="employment">
+
+      <h2>Employment History</h2>
+
+      <ul>
+
+        <li>July 2017: American Lottery Agent – Obuasi Municipal</li>
+
+        <li>December 2017: Graphic Designer and Typist – Page-One Multimedia</li>
+
+        <li>January 2018: Graphic Designer and Typist – Excellent Works Business Centre</li>
+
+        <li>April 2019: Store Keeper – Excellent Mother Care</li>
+
+        <li>January 2020 – December 2021: Teaching – Tomhell Preparatory School</li>
+
+      </ul>
+
+    </div>
+
+    <!-- CAPABILITIES -->
+
+    <div class="section" id="capabilities">
+
+      <h2>Capabilities</h2>
+
+      <ul>
+
+        <li>Ability to work in a team with people from different backgrounds</li>
+
+        <li>Self-initiative and positive influence</li>
+
+        <li>Ability to withstand pressure and meet deadlines</li>
+
+        <li>Fast learner and adaptable to new methods</li>
+
+        <li>Ability to work with little or no supervision</li>
+
+        <li>Fast typing skills</li>
+
+      </ul>
+
+    </div>
+
+    <!-- LANGUAGES -->
+
+    <div class="section" id="languages">
+
+      <h2>Languages</h2>
+
+      <ul>
+
+        <li>English</li>
+
+        <li>Asante Twi</li>
+
+      </ul>
+
+    </div>
+
+    <!-- HOBBIES -->
+
+    <div class="section" id="hobbies">
+
+      <h2>Hobbies</h2>
+
+      <ul>
+
+        <li>Music</li>
+
+        <li>Watching Movies</li>
+
+      </ul>
+
+    </div>
+
+    <!-- BUTTON -->
+
+    <center>
+
+      <a href="index.html" class="home-btn">
+        Back To Home
+      </a>
+
+    </center>
+
+  </div>
+
+</div>
+
+</body>
+</html>

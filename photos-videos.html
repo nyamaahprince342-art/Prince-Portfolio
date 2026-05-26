@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Photos & Videos</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+
+  background:
+  linear-gradient(rgba(2,8,20,0.92), rgba(2,8,20,0.96)),
+  url('https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1200&auto=format&fit=crop');
+
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+
+  min-height:100vh;
+
+  padding:20px;
+
+  color:white;
+
+}
+
+/* MAIN CONTAINER */
+
+.container{
+
+  width:100%;
+  max-width:1200px;
+
+  margin:auto;
+
+  background:rgba(8,17,31,0.95);
+
+  border-radius:25px;
+
+  overflow:hidden;
+
+  border:1px solid rgba(0,217,255,0.2);
+
+  box-shadow:0 0 30px rgba(0,217,255,0.18);
+
+}
+
+/* HEADER */
+
+.header{
+
+  text-align:center;
+
+  padding:35px 20px;
+
+  border-bottom:1px solid rgba(0,217,255,0.2);
+
+}
+
+.header h1{
+
+  color:#00d9ff;
+
+  font-size:34px;
+
+  letter-spacing:4px;
+
+  margin-bottom:10px;
+
+}
+
+.header p{
+
+  color:#ccc;
+
+  line-height:1.8;
+
+  font-size:15px;
+
+}
+
+/* GALLERY */
+
+.gallery{
+
+  padding:35px;
+
+  display:grid;
+
+  grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+
+  gap:25px;
+
+}
+
+/* CARD */
+
+.card{
+
+  background:rgba(255,255,255,0.04);
+
+  border-radius:20px;
+
+  overflow:hidden;
+
+  border:1px solid rgba(0,217,255,0.15);
+
+  transition:0.4s;
+
+  cursor:pointer;
+
+}
+
+.card:hover{
+
+  transform:translateY(-8px);
+
+  box-shadow:
+  0 0 15px rgba(0,217,255,0.35),
+  0 0 30px rgba(0,217,255,0.18);
+
+}
+
+/* IMAGE */
+
+.card img{
+
+  width:100%;
+
+  height:320px;
+
+  object-fit:cover;
+
+  transition:0.5s;
+
+}
+
+.card:hover img{
+
+  transform:scale(1.06);
+
+}
+
+/* TEXT */
+
+.card-text{
+
+  padding:18px;
+
+}
+
+.card-text h2{
+
+  color:#00d9ff;
+
+  margin-bottom:10px;
+
+  font-size:20px;
+
+}
+
+.card-text p{
+
+  color:#ccc;
+
+  font-size:14px;
+
+  line-height:1.8;
+
+}
+
+/* VIDEO SECTION */
+
+.video-section{
+
+  padding:35px;
+
+  border-top:1px solid rgba(0,217,255,0.15);
+
+}
+
+.video-title{
+
+  color:#00d9ff;
+
+  font-size:28px;
+
+  text-align:center;
+
+  margin-bottom:25px;
+
+  letter-spacing:3px;
+
+}
+
+/* VIDEO BOX */
+
+.video-box{
+
+  width:100%;
+
+  max-width:850px;
+
+  margin:auto;
+
+  background:rgba(255,255,255,0.04);
+
+  border-radius:20px;
+
+  overflow:hidden;
+
+  border:1px solid rgba(0,217,255,0.15);
+
+}
+
+/* VIDEO */
+
+.video-box iframe{
+
+  width:100%;
+
+  height:450px;
+
+  border:none;
+
+}
+
+/* NOTE */
+
+.note{
+
+  padding:20px;
+
+  text-align:center;
+
+  color:#ccc;
+
+  line-height:1.8;
+
+  font-size:14px;
+
+}
+
+/* BUTTON */
+
+.btn-area{
+
+  text-align:center;
+
+  padding:35px;
+
+}
+
+.home-btn{
+
+  background:#00d9ff;
+
+  color:#02111d;
+
+  text-decoration:none;
+
+  padding:14px 30px;
+
+  border-radius:25px;
+
+  font-weight:bold;
+
+  font-size:14px;
+
+  transition:0.3s;
+
+}
+
+.home-btn:hover{
+
+  background:white;
+
+  color:#00aaff;
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .header h1{
+
+    font-size:24px;
+
+  }
+
+  .gallery{
+
+    padding:20px;
+
+  }
+
+  .card img{
+
+    height:250px;
+
+  }
+
+  .video-box iframe{
+
+    height:250px;
+
+  }
+
+  .video-title{
+
+    font-size:22px;
+
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+
+  <div class="header">
+
+    <h1>PHOTOS & VIDEOS</h1>
+
+    <p>
+      Memorable pictures and educational activities captured
+      during teaching practice and internship experiences.
+    </p>
+
+  </div>
+
+  <!-- PHOTO GALLERY -->
+
+  <div class="gallery">
+
+    <!-- PHOTO 1 -->
+
+    <div class="card">
+
+      <img src="l1.jpg" alt="Photo 1">
+
+      <div class="card-text">
+
+        <h2>Teaching Activity</h2>
+
+        <p>
+          Classroom interaction and lesson delivery during
+          teaching practice.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- PHOTO 2 -->
+
+    <div class="card">
+
+      <img src="l2.jpg" alt="Photo 2">
+
+      <div class="card-text">
+
+        <h2>Student Participation</h2>
+
+        <p>
+          Encouraging active participation and collaborative
+          learning among students.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- PHOTO 3 -->
+
+    <div class="card">
+
+      <img src="l3.jpg" alt="Photo 3">
+
+      <div class="card-text">
+
+        <h2>Practical Learning</h2>
+
+        <p>
+          Demonstrating practical teaching methods and
+          learner-centered approaches.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- PHOTO 4 -->
+
+    <div class="card">
+
+      <img src="l4.jpg" alt="Photo 4">
+
+      <div class="card-text">
+
+        <h2>Internship Experience</h2>
+
+        <p>
+          Capturing memorable internship moments and
+          professional development experiences.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- PHOTO 5 -->
+
+    <div class="card">
+
+      <img src="l5.jpg" alt="Photo 5">
+
+      <div class="card-text">
+
+        <h2>Teaching Practice</h2>
+
+        <p>
+          Educational activities and classroom engagement
+          during internship sessions.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- PHOTO 6 -->
+
+    <div class="card">
+
+      <img src="l6.jpg" alt="Photo 6">
+
+      <div class="card-text">
+
+        <h2>Learning Environment</h2>
+
+        <p>
+          Promoting active learning and positive classroom
+          participation among students.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- PHOTO 7 -->
+
+    <div class="card">
+
+      <img src="l7.jpg" alt="Photo 7">
+
+      <div class="card-text">
+
+        <h2>Professional Experience</h2>
+
+        <p>
+          Capturing valuable teaching and professional
+          internship experiences.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- VIDEO SECTION -->
+
+  <div class="video-section">
+
+    <h2 class="video-title">MY VIDEO</h2>
+
+    <div class="video-box">
+
+      <!-- REPLACE THE LINK BELOW WITH YOUR VIDEO LINK -->
+
+      <iframe
+      src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+      allowfullscreen>
+      </iframe>
+
+    </div>
+
+    <p class="note">
+
+      Replace:
+      <br><br>
+
+      <b>YOUR_VIDEO_ID</b>
+
+      <br><br>
+
+      with your YouTube video ID to display your video here.
+
+    </p>
+
+  </div>
+
+  <!-- BUTTON -->
+
+  <div class="btn-area">
+
+    <a href="index.html" class="home-btn">
+      Back To Home
+    </a>
+
+  </div>
+
+</div>
+
+</body>
+</html>

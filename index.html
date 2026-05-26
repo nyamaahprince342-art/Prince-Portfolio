@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prince Nyamaah | Portfolio</title>
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+
+  background:
+  linear-gradient(rgba(2,8,20,0.88), rgba(2,8,20,0.92)),
+  url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop');
+
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+
+  min-height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:20px;
+
+  color:white;
+
+}
+
+/* MAIN CONTAINER */
+
+.portfolio{
+
+  width:100%;
+  max-width:950px;
+
+  background:rgba(8,17,31,0.94);
+
+  border:1px solid rgba(0,217,255,0.25);
+
+  border-radius:25px;
+
+  padding:30px;
+
+  backdrop-filter:blur(10px);
+
+  box-shadow:0 0 30px rgba(0,217,255,0.18);
+
+  display:flex;
+
+  gap:35px;
+
+  align-items:center;
+
+}
+
+/* LEFT SIDE */
+
+.left{
+
+  flex:1;
+
+  text-align:center;
+
+}
+
+.small-title{
+
+  color:#00d9ff;
+
+  font-size:12px;
+
+  letter-spacing:4px;
+
+  margin-bottom:18px;
+
+  text-transform:uppercase;
+
+  font-weight:bold;
+
+}
+
+/* PROFILE IMAGE */
+
+.profile-img{
+
+  width:160px;
+
+  height:160px;
+
+  border-radius:50%;
+
+  object-fit:cover;
+
+  border:4px solid #00d9ff;
+
+  padding:4px;
+
+  margin-bottom:18px;
+
+  box-shadow:0 0 18px rgba(0,217,255,0.4);
+
+  transition:0.5s ease;
+
+  cursor:pointer;
+
+}
+
+.profile-img:hover{
+
+  transform:scale(1.08) rotate(3deg);
+
+  box-shadow:
+  0 0 20px #00d9ff,
+  0 0 40px #00d9ff,
+  0 0 60px rgba(0,217,255,0.7);
+
+  border-color:white;
+
+}
+
+/* NAME */
+
+.name{
+
+  font-size:30px;
+
+  font-weight:bold;
+
+  margin-bottom:8px;
+
+}
+
+/* PROFESSION */
+
+.job{
+
+  color:#00d9ff;
+
+  font-size:14px;
+
+  letter-spacing:2px;
+
+  margin-bottom:24px;
+
+}
+
+/* CONTACT */
+
+.contact{
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:15px;
+
+  margin-bottom:22px;
+
+}
+
+.contact a{
+
+  width:45px;
+
+  height:45px;
+
+  border-radius:50%;
+
+  border:2px solid #00d9ff;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  color:#00d9ff;
+
+  text-decoration:none;
+
+  font-size:17px;
+
+  transition:0.3s;
+
+}
+
+.contact a:hover{
+
+  background:#00d9ff;
+
+  color:#02111d;
+
+  transform:translateY(-3px);
+
+}
+
+/* ABOUT BUTTON */
+
+.about-btn{
+
+  background:#00d9ff;
+
+  border:none;
+
+  padding:12px 28px;
+
+  border-radius:22px;
+
+  color:#02111d;
+
+  font-size:13px;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+  transition:0.3s;
+
+}
+
+.about-btn:hover{
+
+  background:white;
+
+  color:#00aaff;
+
+}
+
+/* RIGHT SIDE */
+
+.right{
+
+  flex:1;
+
+}
+
+/* CONTENT TITLE */
+
+.content-title{
+
+  color:#00d9ff;
+
+  font-size:22px;
+
+  margin-bottom:18px;
+
+  letter-spacing:4px;
+
+  text-align:center;
+
+  font-weight:bold;
+
+}
+
+/* MENU */
+
+.menu{
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:12px;
+
+}
+
+.menu button{
+
+  background:#00d9ff;
+
+  border:none;
+
+  padding:14px;
+
+  border-radius:10px;
+
+  color:#02111d;
+
+  font-size:13px;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+  transition:0.3s;
+
+}
+
+.menu button:hover{
+
+  background:white;
+
+  color:#00aaff;
+
+  transform:translateX(4px);
+
+}
+
+/* MOBILE VIEW */
+
+@media(max-width:768px){
+
+  .portfolio{
+
+    flex-direction:column;
+
+    max-width:360px;
+
+    padding:22px 18px;
+
+    gap:20px;
+
+  }
+
+  .profile-img{
+
+    width:120px;
+
+    height:120px;
+
+  }
+
+  .name{
+
+    font-size:24px;
+
+  }
+
+  .job{
+
+    font-size:12px;
+
+  }
+
+  .content-title{
+
+    font-size:18px;
+
+  }
+
+  .menu button{
+
+    font-size:12px;
+
+    padding:12px;
+
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="portfolio">
+
+  <!-- LEFT SIDE -->
+
+  <div class="left">
+
+    <p class="small-title">PERSONAL PORTFOLIO</p>
+
+    <img src="452e3f47-9037-4c37-9ea5-51512c3d8f90.png"
+    alt="Prince Nyamaah"
+    class="profile-img">
+
+    <h1 class="name">PRINCE NYAMAAH</h1>
+
+    <p class="job">GRAPHIC DESIGNER & I.T. TUTOR</p>
+
+    <!-- CONTACT -->
+
+    <div class="contact">
+
+      <a href="mailto:princenyamaah115@gmail.com"
+      title="Send Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+
+      <a href="tel:0541805833"
+      title="Call Me">
+        <i class="fas fa-phone"></i>
+      </a>
+
+    </div>
+
+    <!-- ABOUT BUTTON -->
+
+    <button class="about-btn"
+    onclick="window.location.href='about.html'">
+      About Me
+    </button>
+
+  </div>
+
+  <!-- RIGHT SIDE -->
+
+  <div class="right">
+
+    <h2 class="content-title">CONTENT</h2>
+
+    <div class="menu">
+
+      <!-- TEACHING PHILOSOPHY -->
+
+      <button onclick="window.location.href='teaching-philosophy.html'">
+        Teaching Philosophy
+      </button>
+
+      <!-- REFLECTIVE PRACTICE -->
+
+      <button onclick="window.location.href='reflective-practice.html'">
+        Reflective Practice
+      </button>
+
+      <!-- CV -->
+
+      <button onclick="window.location.href='cv.html'">
+        Curriculum Vitae
+      </button>
+
+      <!-- INTERNSHIP -->
+
+      <button onclick="window.location.href='internship-record-book.html'">
+        Internship Record Book
+      </button>
+
+      <!-- LESSON NOTES -->
+
+      <button onclick="window.location.href='lesson-notes.html'">
+        Lesson Notes
+      </button>
+
+      <!-- PHOTOS & VIDEOS -->
+
+      <button onclick="window.location.href='photos-videos.html'">
+        Pictures & Videos
+      </button>
+
+      <!-- TLMS -->
+
+      <button onclick="window.location.href='tlms.html'">
+        TLM's
+      </button>
+
+      <!-- EXERCISE & TEST -->
+
+      <button onclick="window.location.href='exercise-test.html'">
+        Exercise & Test
+      </button>
+
+      <!-- EXAMINATION & MARKING SCHEME -->
+
+      <button onclick="window.location.href='examination-marking-scheme.html'">
+        Examination & Marking Scheme
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

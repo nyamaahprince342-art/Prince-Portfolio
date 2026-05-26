@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Exercise & Test</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+
+  background:
+  linear-gradient(rgba(2,8,20,0.92), rgba(2,8,20,0.96)),
+  url('https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1200&auto=format&fit=crop');
+
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+
+  min-height:100vh;
+
+  padding:20px;
+
+  color:white;
+
+}
+
+/* MAIN CONTAINER */
+
+.container{
+
+  width:100%;
+  max-width:1200px;
+
+  margin:auto;
+
+  background:rgba(8,17,31,0.95);
+
+  border-radius:25px;
+
+  overflow:hidden;
+
+  border:1px solid rgba(0,217,255,0.2);
+
+  box-shadow:0 0 30px rgba(0,217,255,0.18);
+
+}
+
+/* HEADER */
+
+.header{
+
+  text-align:center;
+
+  padding:35px 20px;
+
+  border-bottom:1px solid rgba(0,217,255,0.2);
+
+}
+
+.header h1{
+
+  color:#00d9ff;
+
+  font-size:34px;
+
+  letter-spacing:4px;
+
+  margin-bottom:10px;
+
+}
+
+.header p{
+
+  color:#ccc;
+
+  line-height:1.8;
+
+  font-size:15px;
+
+}
+
+/* GALLERY */
+
+.gallery{
+
+  padding:35px;
+
+  display:grid;
+
+  grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+
+  gap:25px;
+
+}
+
+/* CARD */
+
+.card{
+
+  background:rgba(255,255,255,0.04);
+
+  border-radius:20px;
+
+  overflow:hidden;
+
+  border:1px solid rgba(0,217,255,0.15);
+
+  transition:0.4s;
+
+  cursor:pointer;
+
+}
+
+.card:hover{
+
+  transform:translateY(-8px);
+
+  box-shadow:
+  0 0 15px rgba(0,217,255,0.35),
+  0 0 30px rgba(0,217,255,0.18);
+
+}
+
+/* IMAGE */
+
+.card img{
+
+  width:100%;
+
+  height:350px;
+
+  object-fit:cover;
+
+  transition:0.5s;
+
+}
+
+.card:hover img{
+
+  transform:scale(1.06);
+
+}
+
+/* TEXT */
+
+.card-text{
+
+  padding:18px;
+
+}
+
+.card-text h2{
+
+  color:#00d9ff;
+
+  margin-bottom:10px;
+
+  font-size:22px;
+
+}
+
+.card-text p{
+
+  color:#ccc;
+
+  font-size:14px;
+
+  line-height:1.8;
+
+}
+
+/* BUTTON */
+
+.btn-area{
+
+  text-align:center;
+
+  padding:35px;
+
+}
+
+.home-btn{
+
+  background:#00d9ff;
+
+  color:#02111d;
+
+  text-decoration:none;
+
+  padding:14px 30px;
+
+  border-radius:25px;
+
+  font-weight:bold;
+
+  font-size:14px;
+
+  transition:0.3s;
+
+}
+
+.home-btn:hover{
+
+  background:white;
+
+  color:#00aaff;
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .header h1{
+
+    font-size:24px;
+
+  }
+
+  .gallery{
+
+    padding:20px;
+
+  }
+
+  .card img{
+
+    height:260px;
+
+  }
+
+  .card-text h2{
+
+    font-size:19px;
+
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+
+  <div class="header">
+
+    <h1>EXERCISE & TEST</h1>
+
+    <p>
+      Collection of classroom exercises, assessments,
+      and test activities prepared during teaching practice.
+    </p>
+
+  </div>
+
+  <!-- GALLERY -->
+
+  <div class="gallery">
+
+    <!-- IMAGE 1 -->
+
+    <div class="card">
+
+      <img src="k1.jpg" alt="Exercise 1">
+
+      <div class="card-text">
+
+        <h2>Class Exercise</h2>
+
+        <p>
+          Classroom exercise prepared to evaluate students’
+          understanding and participation during lessons.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- IMAGE 2 -->
+
+    <div class="card">
+
+      <img src="k2.jpg" alt="Exercise 2">
+
+      <div class="card-text">
+
+        <h2>Assessment Activity</h2>
+
+        <p>
+          Student assessment activities conducted to
+          measure learning outcomes and classroom performance.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- IMAGE 3 -->
+
+    <div class="card">
+
+      <img src="k3.jpg" alt="Exercise 3">
+
+      <div class="card-text">
+
+        <h2>Test Preparation</h2>
+
+        <p>
+          Structured test preparation and evaluation
+          exercises used during teaching practice.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- BUTTON -->
+
+  <div class="btn-area">
+
+    <a href="index.html" class="home-btn">
+      Back To Home
+    </a>
+
+  </div>
+
+</div>
+
+</body>
+</html>

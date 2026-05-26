@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Me | Nyamaah Prince</title>
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:
+  linear-gradient(rgba(2,8,20,0.90), rgba(2,8,20,0.92)),
+  url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop');
+
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+
+  color:white;
+  min-height:100vh;
+  padding:20px;
+}
+
+/* MAIN CONTAINER */
+
+.about-page{
+  max-width:950px;
+  margin:auto;
+  background:rgba(8,17,31,0.92);
+  border:1px solid rgba(0,217,255,0.3);
+  border-radius:25px;
+  padding:35px;
+  backdrop-filter:blur(10px);
+  box-shadow:0 0 25px rgba(0,217,255,0.15);
+}
+
+/* TOP SECTION */
+
+.top{
+  text-align:center;
+  margin-bottom:35px;
+}
+
+/* PROFILE IMAGE */
+
+.profile-img{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid #00d9ff;
+  padding:4px;
+  box-shadow:0 0 18px rgba(0,217,255,0.4);
+  margin-bottom:18px;
+
+  /* EFFECT */
+  transition:0.5s ease;
+  cursor:pointer;
+}
+
+/* HOVER EFFECT */
+
+.profile-img:hover{
+
+  transform:scale(1.08) rotate(3deg);
+
+  box-shadow:
+  0 0 20px #00d9ff,
+  0 0 40px #00d9ff,
+  0 0 60px rgba(0,217,255,0.7);
+
+  border-color:white;
+
+}
+
+/* TITLE */
+
+.title{
+  color:#00d9ff;
+  font-size:13px;
+  letter-spacing:4px;
+  margin-bottom:10px;
+  font-weight:bold;
+}
+
+/* NAME */
+
+.name{
+  font-size:32px;
+  margin-bottom:8px;
+}
+
+/* JOB */
+
+.job{
+  color:#00d9ff;
+  font-size:14px;
+  letter-spacing:2px;
+}
+
+/* CONTENT BOX */
+
+.box{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(0,217,255,0.2);
+  padding:25px;
+  border-radius:18px;
+  margin-bottom:25px;
+}
+
+.box h2{
+  color:#00d9ff;
+  margin-bottom:18px;
+  font-size:24px;
+}
+
+.box p{
+  color:#ddd;
+  line-height:2;
+  font-size:15px;
+}
+
+.box span{
+  color:#00d9ff;
+  font-weight:bold;
+}
+
+/* SKILLS */
+
+.skills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:10px;
+}
+
+.skills span{
+  background:#00d9ff;
+  color:#02111d;
+  padding:10px 15px;
+  border-radius:20px;
+  font-size:13px;
+  font-weight:bold;
+}
+
+/* CONTACT */
+
+.contact{
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  margin-top:20px;
+}
+
+.contact a{
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  border:2px solid #00d9ff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#00d9ff;
+  text-decoration:none;
+  font-size:18px;
+  transition:0.3s;
+}
+
+.contact a:hover{
+  background:#00d9ff;
+  color:#02111d;
+  transform:translateY(-3px);
+}
+
+/* BUTTON */
+
+.home-btn{
+  display:inline-block;
+  margin-top:25px;
+  background:#00d9ff;
+  color:#02111d;
+  padding:13px 30px;
+  border-radius:25px;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.home-btn:hover{
+  background:white;
+  color:#00aaff;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .about-page{
+    padding:22px;
+  }
+
+  .profile-img{
+    width:120px;
+    height:120px;
+  }
+
+  .name{
+    font-size:25px;
+  }
+
+  .box h2{
+    font-size:21px;
+  }
+
+  .box p{
+    font-size:14px;
+    line-height:1.9;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="about-page">
+
+  <!-- TOP -->
+
+  <div class="top">
+
+    <p class="title">ABOUT ME</p>
+
+    <img src="452e3f47-9037-4c37-9ea5-51512c3d8f90.png"
+    alt="Nyamaah Prince"
+    class="profile-img">
+
+    <h1 class="name">NYAMAAH PRINCE</h1>
+
+    <p class="job">GRAPHIC DESIGNER & I.T. TUTOR</p>
+
+  </div>
+
+  <!-- ABOUT -->
+
+  <div class="box">
+
+    <h2>Who I Am</h2>
+
+    <p>
+      Hello! I'm <span>Nyamaah Prince</span>, a passionate
+      <span>Graphic Designer</span> and
+      <span>I.T. Tutor</span> with a strong passion for
+      creativity, technology, and education.
+
+      I enjoy transforming ideas into visually attractive
+      designs while also helping people build confidence
+      in the world of technology and digital skills.
+      Over the years, I have developed experience in both
+      graphic design and information technology, allowing
+      me to combine creativity with technical knowledge
+      to produce impactful and meaningful work.
+
+      As a Graphic Designer, I specialize in creating
+      professional branding materials, flyers, posters,
+      logos, social media designs, digital artwork,
+      and marketing content that capture attention and
+      communicate ideas effectively. I believe every
+      design should not only look beautiful but also
+      deliver a clear message and leave a lasting impression.
+
+      My design process focuses on creativity, simplicity,
+      and functionality. I pay close attention to details,
+      color combinations, typography, and layout structure
+      to ensure every project achieves a modern and
+      professional appearance.
+
+      As an I.T. Tutor, I am committed to making technology
+      easy to understand and accessible to everyone.
+      I guide students through practical lessons in coding,
+      computer applications, digital literacy, and
+      problem-solving skills. My teaching approach is
+      interactive, hands-on, and focused on helping learners
+      build confidence while developing real-world skills.
+
+      Beyond my professional work, I am a continuous learner
+      who enjoys exploring modern technologies, improving
+      my creative abilities, and staying updated with the
+      latest digital trends. I believe learning never stops,
+      and I constantly challenge myself to grow both
+      personally and professionally.
+
+      My mission is to use my skills and creativity to
+      inspire others, support businesses and individuals,
+      and contribute positively to the digital world through
+      innovative designs and quality technology education.
+    </p>
+
+  </div>
+
+  <!-- SKILLS -->
+
+  <div class="box">
+
+    <h2>My Skills</h2>
+
+    <div class="skills">
+
+      <span>Graphic Design</span>
+
+      <span>Adobe Photoshop</span>
+
+      <span>CorelDRAW</span>
+
+      <span>HTML5</span>
+
+      <span>CSS3</span>
+
+      <span>JavaScript</span>
+
+      <span>I.T. Tutoring</span>
+
+      <span>Digital Creativity</span>
+
+      <span>Responsive Design</span>
+
+      <span>Problem Solving</span>
+
+    </div>
+
+  </div>
+
+  <!-- GOALS -->
+
+  <div class="box">
+
+    <h2>My Goals</h2>
+
+    <p>
+      My goal is to continue growing as a professional
+      Graphic Designer and I.T. Tutor while helping businesses,
+      students, and organizations achieve success through
+      creativity and technology.
+
+      I aim to inspire young people to embrace digital skills,
+      creativity, and innovation while building modern solutions
+      that make a positive impact in society.
+
+      I am committed to continuous learning, improvement,
+      and using my talents to contribute meaningfully to
+      the digital and educational world.
+    </p>
+
+  </div>
+
+  <!-- CONTACT -->
+
+  <div class="contact">
+
+    <a href="mailto:princenyamaah115@gmail.com"
+    title="Send Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+
+    <a href="tel:0541805833"
+    title="Call Me">
+      <i class="fas fa-phone"></i>
+    </a>
+
+  </div>
+
+  <!-- BUTTON -->
+
+  <center>
+    <a href="index.html" class="home-btn">
+      Back To Home
+    </a>
+  </center>
+
+</div>
+
+</body>
+</html>
