@@ -139,23 +139,17 @@ body{
 
   width:100%;
 
-  height:auto;
+  height:320px;
 
-  max-height:500px;
-
-  object-fit:contain;
-
-  background:#000;
+  object-fit:cover;
 
   transition:0.5s;
-
-  display:block;
 
 }
 
 .card:hover img{
 
-  transform:scale(1.03);
+  transform:scale(1.06);
 
 }
 
@@ -187,33 +181,19 @@ body{
 
 }
 
-/* VIDEO SECTION */
+/* YOUTUBE SECTION */
 
-.video-section{
+.youtube-section{
 
-  padding:35px;
+  padding:40px 25px;
 
   border-top:1px solid rgba(0,217,255,0.15);
 
-}
-
-.video-title{
-
-  color:#00d9ff;
-
-  font-size:28px;
-
   text-align:center;
 
-  margin-bottom:25px;
-
-  letter-spacing:3px;
-
 }
 
-/* VIDEO BOX */
-
-.video-box{
+.youtube-box{
 
   width:100%;
 
@@ -223,39 +203,77 @@ body{
 
   background:rgba(255,255,255,0.04);
 
-  border-radius:20px;
+  border-radius:25px;
 
-  overflow:hidden;
+  padding:40px 20px;
 
   border:1px solid rgba(0,217,255,0.15);
 
 }
 
-/* VIDEO */
+.youtube-icon{
 
-.video-box iframe{
+  font-size:90px;
 
-  width:100%;
+  color:red;
 
-  height:450px;
-
-  border:none;
+  margin-bottom:20px;
 
 }
 
-/* NOTE */
+.youtube-title{
 
-.note{
+  color:#00d9ff;
 
-  padding:20px;
+  font-size:28px;
 
-  text-align:center;
+  margin-bottom:15px;
+
+  letter-spacing:3px;
+
+}
+
+.youtube-text{
 
   color:#ccc;
 
-  line-height:1.8;
+  line-height:1.9;
 
-  font-size:14px;
+  margin-bottom:30px;
+
+  font-size:15px;
+
+}
+
+/* YOUTUBE BUTTON */
+
+.youtube-btn{
+
+  background:#00d9ff;
+
+  color:#02111d;
+
+  text-decoration:none;
+
+  padding:15px 35px;
+
+  border-radius:30px;
+
+  font-weight:bold;
+
+  display:inline-block;
+
+  transition:0.3s;
+
+}
+
+.youtube-btn:hover{
+
+  background:white;
+
+  color:#00aaff;
+
+  transform:translateY(-3px);
 
 }
 
@@ -315,19 +333,19 @@ body{
 
   .card img{
 
-    max-height:350px;
-
-  }
-
-  .video-box iframe{
-
     height:250px;
 
   }
 
-  .video-title{
+  .youtube-title{
 
     font-size:22px;
+
+  }
+
+  .youtube-icon{
+
+    font-size:70px;
 
   }
 
@@ -492,35 +510,35 @@ body{
 
   </div>
 
-  <!-- VIDEO SECTION -->
+  <!-- YOUTUBE SECTION -->
 
-  <div class="video-section">
+  <div class="youtube-section">
 
-    <h2 class="video-title">MY VIDEO</h2>
+    <div class="youtube-box">
 
-    <div class="video-box">
+      <i class="fab fa-youtube youtube-icon"></i>
 
-      <!-- REPLACE WITH YOUR VIDEO LINK -->
+      <h2 class="youtube-title">
+        MY YOUTUBE CHANNEL
+      </h2>
 
-      <iframe
-      src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-      allowfullscreen>
-      </iframe>
+      <p class="youtube-text">
+
+        Click the button below to watch my educational
+        videos, classroom activities, internship experiences,
+        and teaching practice content on YouTube.
+
+      </p>
+
+      <a href="https://youtube.com/@nyamaahprince?si=w7ufzLPhSPbU3_CO"
+      target="_blank"
+      class="youtube-btn">
+
+        Open YouTube Channel
+
+      </a>
 
     </div>
-
-    <p class="note">
-
-      Replace:
-      <br><br>
-
-      <b>YOUR_VIDEO_ID</b>
-
-      <br><br>
-
-      with your YouTube video ID to display your video here.
-
-    </p>
 
   </div>
 
